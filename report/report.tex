@@ -31,23 +31,23 @@
 %----------------------------------------------------------------------------------------
 
 % Header
-\JournalInfo{FRI Natural language processing course 2021}
+\JournalInfo{FRI Natural language processing course 2024}
 
 % Interim or final report
 \Archive{Project report} 
 %\Archive{Final report} 
 
 % Article title
-\PaperTitle{Natural language processing course Latex Template} 
+\PaperTitle{Qualitative Research on Discussions - text categorization} 
 
 % Authors (student competitors) and their info
-\Authors{John Doe, Jane Doe, and Mike Smith}
+\Authors{Sanil Safić, Miha Šircelj, Jan Topolovec}
 
 % Advisors
 \affiliation{\textit{Advisors: Slavko Žitnik}}
 
 % Keywords
-\Keywords{Keyword1, Keyword2, Keyword3 ...}
+\Keywords{Text categorization, LLMs, Natural language processing}
 \newcommand{\keywordname}{Keywords}
 
 
@@ -56,7 +56,7 @@
 %----------------------------------------------------------------------------------------
 
 \Abstract{
-The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here. The abstract goes here.
+This paper presents a method to analyze discussions on "The Lady, or the Tiger?" using Large Language Models (LLMs) for text categorization. Our approach involves exploring a coded dataset, refining models on a HPC infrastructure, and iteratively improving performance compared to human coders. Additionally, we employ separately fine-tuned LLMs to explain identified categories, enhancing interpretability. By implementing this method, we aim to develop reliable models for accurately categorizing discussions, contributing to a better understanding of discourse dynamics.
 }
 
 %----------------------------------------------------------------------------------------
@@ -77,156 +77,44 @@ The abstract goes here. The abstract goes here. The abstract goes here. The abst
 %----------------------------------------------------------------------------------------
 
 \section*{Introduction}
-	These latex files are intended to serve as a the template for the NLP course at FRI.  The template is adapted from the FRI Data Science Project Competition. template  If you find mistakes in the template or have problems using it, please consult Jure Demšar (\href{mailto:jure.demsar@fri.uni-lj.si}{jure.demsar@fri.uni-lj.si}).
-	
-	In the Introduction section you should write about the relevance of your work (what is the purpose of the project, what will we solve) and about related work (what solutions for the problem already exist). Where appropriate, reference scientific work conducted by other researchers. For example, the work done by Demšar et al. \cite{Demsar2016BalancedMixture} is very important for our project. The abbreviation et al. is for et alia, which in latin means and others, we use this abbreviation when there are more than two authors of the work we are citing. If there are two authors (or if there is a single author) we just write down their surnames. For example, the work done by Demšar and Lebar Bajec \cite{Demsar2017LinguisticEvolution} is also important for successful completion of our project.
+Our goal for the seminar project is to leverage large language models (LLMs) for qualitative discourse analysis, specifically focusing on text categorization. We will achieve this through a methodical approach involving literature review, data exploration, model fine-tuning, and performance evaluation. We aim to develop highly reliable models that perform well on a given dataset and generalize to other online discussions. To accomplish this, we will evaluate our model against human-annotated labels after each iteration step.
+%------------------------------------------------
+
+\section*{Related work}
+
+Numerous studies have delved into research methods for analyzing discussions and categorizing text. Researchers have explored different approaches like thematic analysis and machine learning algorithms to better understand how discussions evolve and how text can be categorized effectively.
+
+In this section, we will discuss three related articles. The first article concentrates on supervised and traditional term weighting methods for automatic text categorization, while the other two articles focus on the utilization of GPT engines for text analysis and categorization.
+
+The first article \cite{4509437} investigates various term weighting methods to enhance automatic text categorization performance. It evaluates both supervised and traditional (unsupervised) methods on benchmark datasets like Reuters-21578 and 20 Newsgroups. Introducing a new supervised term weighting method called \textit{tf.rf}, which combines term frequency with relevance frequency, the study aims to improve term discriminating power by considering the distribution of relevant documents in the collection. Results indicate that while traditional methods like \textit{tf.idf} showed mixed performance, the proposed \textit{tf.rf} method consistently outperformed others across different datasets and algorithms, suggesting its effectiveness in enhancing text categorization by better capturing term importance based on document distribution in categories.
+
+
+
+The second article \cite{pham2023topicgpt} introduces TopicGPT, a prompt-based framework that uses LLMs to find topics in a collection of documents. They address the limitation of using bag-of-words topics in other topic modeling methods. TopicGPT operates in two main stages: topic generation and topic assignment. The first one iteratively uses the LLM to generate descriptive topics based on the dataset, refining and merging them for coherence. In the second stage, the LLM assigns topics to documents using the generated topic list, ensuring accuracy through verifiable quotes and self-correction for errors. Results show that TopicGPT aligns substantially better with human-annotated labels than baselines, LDA and BERTopic. The dataset used for this study includes Wikipedia articles and Congressional bills.
+
+The article \cite{Li_Ma_Fan_Lee_Yu_Hemphill_2023} undertakes an analysis of Twitter posts to identify some concerns about using Generative AI models, particularly  ChatGPT, in education. The authors collected data by finding mentions of ChatGPT using Twitter API - they collected a total of 247,484 tweets. For sentiment analysis, they used fine-tuned RoBERTa model which showed better performance than SVM-based models. The RoBERTa model categorized tweets as positive, neutral and negative, which where subjected to further analysis. They employed BERTopic tool to cluster negative tweets into 200 topics to better expose concerns. The sentiment analysis shows that the majority of users expressed positive or neutral attitude towards ChatGPT in education. Among those expressing reservations about its use, there were some notable topics, such as: Academic integrity, impact on learning outcomes and workforce challenges, specifically expressed by individuals from education and tech. 
+
 
 
 %------------------------------------------------
 
-\section*{Methods}
+\section*{Data Exploration}
 
-Use the Methods section to describe what you did an how you did it -- in what way did you prepare the data, what algorithms did you use, how did you test various solutions ... Provide all the required details for a reproduction of your work.
+In the project, where we try to create a model for text categorization, we will be referencing to the data presented in the form of discussions based on the story "The Lady, or the Tiger?". The author of story does not define its ending and consequently leaves room for many interpretations by readers.
 
-Below are \LaTeX examples of some common elements that you will probably need when writing your report (e.g. figures, equations, lists, code examples ...).
-
-
-\subsection*{Equations}
-
-You can write equations inline, e.g. $\cos\pi=-1$, $E = m \cdot c^2$ and $\alpha$, or you can include them as separate objects. The Bayes’s rule is stated mathematically as:
-
-\begin{equation}
-	P(A|B) = \frac{P(B|A)P(A)}{P(B)},
-	\label{eq:bayes}
-\end{equation}
-
-where $A$ and $B$ are some events. You can also reference it -- the equation \ref{eq:bayes} describes the Bayes's rule.
-
-\subsection*{Lists}
-
-We can insert numbered and bullet lists:
-
-% the [noitemsep] option makes the list more compact
-\begin{enumerate}[noitemsep] 
-	\item First item in the list.
-	\item Second item in the list.
-	\item Third item in the list.
-\end{enumerate}
-
-\begin{itemize}[noitemsep] 
-	\item First item in the list.
-	\item Second item in the list.
-	\item Third item in the list.
-\end{itemize}
-
-We can use the description environment to define or describe key terms and phrases.
-
-\begin{description}
-	\item[Word] What is a word?.
-	\item[Concept] What is a concept?
-	\item[Idea] What is an idea?
-\end{description}
-
-
-\subsection*{Random text}
-
-This text is inserted only to make this template look more like a proper report. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit dictum facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam convallis tellus velit, quis ornare ipsum aliquam id. Maecenas tempus mauris sit amet libero elementum eleifend. Nulla nunc orci, consectetur non consequat ac, consequat non nisl. Aenean vitae dui nec ex fringilla malesuada. Proin elit libero, faucibus eget neque quis, condimentum laoreet urna. Etiam at nunc quis felis pulvinar dignissim. Phasellus turpis turpis, vestibulum eget imperdiet in, molestie eget neque. Curabitur quis ante sed nunc varius dictum non quis nisl. Donec nec lobortis velit. Ut cursus, libero efficitur dictum imperdiet, odio mi fermentum dui, id vulputate metus velit sit amet risus. Nulla vel volutpat elit. Mauris ex erat, pulvinar ac accumsan sit amet, ultrices sit amet turpis.
-
-Phasellus in ligula nunc. Vivamus sem lorem, malesuada sed pretium quis, varius convallis lectus. Quisque in risus nec lectus lobortis gravida non a sem. Quisque et vestibulum sem, vel mollis dolor. Nullam ante ex, scelerisque ac efficitur vel, rhoncus quis lectus. Pellentesque scelerisque efficitur purus in faucibus. Maecenas vestibulum vulputate nisl sed vestibulum. Nullam varius turpis in hendrerit posuere.
-
-
-\subsection*{Figures}
-
-You can insert figures that span over the whole page, or over just a single column. The first one, \figurename~\ref{fig:column}, is an example of a figure that spans only across one of the two columns in the report.
-
-\begin{figure}[ht]\centering
-	\includegraphics[width=\linewidth]{single_column.pdf}
-	\caption{\textbf{A random visualization.} This is an example of a figure that spans only across one of the two columns.}
-	\label{fig:column}
-\end{figure}
-
-On the other hand, \figurename~\ref{fig:whole} is an example of a figure that spans across the whole page (across both columns) of the report.
-
-% \begin{figure*} makes the figure take up the entire width of the page
-\begin{figure*}[ht]\centering 
-	\includegraphics[width=\linewidth]{whole_page.pdf}
-	\caption{\textbf{Visualization of a Bayesian hierarchical model.} This is an example of a figure that spans the whole width of the report.}
-	\label{fig:whole}
-\end{figure*}
-
-
-\subsection*{Tables}
-
-Use the table environment to insert tables.
-
-\begin{table}[hbt]
-	\caption{Table of grades.}
-	\centering
-	\begin{tabular}{l l | r}
-		\toprule
-		\multicolumn{2}{c}{Name} \\
-		\cmidrule(r){1-2}
-		First name & Last Name & Grade \\
-		\midrule
-		John & Doe & $7.5$ \\
-		Jane & Doe & $10$ \\
-		Mike & Smith & $8$ \\
-		\bottomrule
-	\end{tabular}
-	\label{tab:label}
-\end{table}
-
-
-\subsection*{Code examples}
-
-You can also insert short code examples. You can specify them manually, or insert a whole file with code. Please avoid inserting long code snippets, advisors will have access to your repositories and can take a look at your code there. If necessary, you can use this technique to insert code (or pseudo code) of short algorithms that are crucial for the understanding of the manuscript.
-
-\lstset{language=Python}
-\lstset{caption={Insert code directly from a file.}}
-\lstset{label={lst:code_file}}
-\lstinputlisting[language=Python]{code/example.py}
-
-\lstset{language=R}
-\lstset{caption={Write the code you want to insert.}}
-\lstset{label={lst:code_direct}}
-\begin{lstlisting}
-import(dplyr)
-import(ggplot)
-
-ggplot(diamonds,
-	   aes(x=carat, y=price, color=cut)) +
-  geom_point() +
-  geom_smooth()
-\end{lstlisting}
+The given data includes discussions that are already appropriately categorized according to category definitions. Each comment is initially categorized according to their type - such as "Seminar" (discussion on story interpretation) or "Social" (discussion between users that is not related to the interpretation). Some of these questions also leave room for further interpretation. In the case of questions, they are generally divided into open and close-ended types, while certain discussions can also be labeled as explanations or agreement of previous arguments.
 
 %------------------------------------------------
 
-\section*{Results}
+\section*{Proposed implementation}
 
-Use the results section to present the final results of your work. Present the results in a objective and scientific fashion. Use visualisations to convey your results in a clear and efficient manner. When comparing results between various techniques use appropriate statistical methodology.
+The first step involves thoroughly exploring the provided dataset of coded discussions. This includes examining the dataset's structure, studying the distribution of categories, and understanding the details of the coded discussions.
 
-\subsection*{More random text}
+After exploring the data, we will start building and refining Large Language Models (LLMs) for text categorization. To handle the computational demands of training large-scale models, we'll use a HPC infrastructure, ensuring efficient model development.
 
-This text is inserted only to make this template look more like a proper report. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam blandit dictum facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam convallis tellus velit, quis ornare ipsum aliquam id. Maecenas tempus mauris sit amet libero elementum eleifend. Nulla nunc orci, consectetur non consequat ac, consequat non nisl. Aenean vitae dui nec ex fringilla malesuada. Proin elit libero, faucibus eget neque quis, condimentum laoreet urna. Etiam at nunc quis felis pulvinar dignissim. Phasellus turpis turpis, vestibulum eget imperdiet in, molestie eget neque. Curabitur quis ante sed nunc varius dictum non quis nisl. Donec nec lobortis velit. Ut cursus, libero efficitur dictum imperdiet, odio mi fermentum dui, id vulputate metus velit sit amet risus. Nulla vel volutpat elit. Mauris ex erat, pulvinar ac accumsan sit amet, ultrices sit amet turpis.
+Performance evaluation will be a key component of our implementation strategy. Our approach will include iteratively comparing and revising our model's performance against that of human coders (categorizers).
 
-Phasellus in ligula nunc. Vivamus sem lorem, malesuada sed pretium quis, varius convallis lectus. Quisque in risus nec lectus lobortis gravida non a sem. Quisque et vestibulum sem, vel mollis dolor. Nullam ante ex, scelerisque ac efficitur vel, rhoncus quis lectus. Pellentesque scelerisque efficitur purus in faucibus. Maecenas vestibulum vulputate nisl sed vestibulum. Nullam varius turpis in hendrerit posuere.
-
-Nulla rhoncus tortor eget ipsum commodo lacinia sit amet eu urna. Cras maximus leo mauris, ac congue eros sollicitudin ac. Integer vel erat varius, scelerisque orci eu, tristique purus. Proin id leo quis ante pharetra suscipit et non magna. Morbi in volutpat erat. Vivamus sit amet libero eu lacus pulvinar pharetra sed at felis. Vivamus non nibh a orci viverra rhoncus sit amet ullamcorper sem. Ut nec tempor dui. Aliquam convallis vitae nisi ac volutpat. Nam accumsan, erat eget faucibus commodo, ligula dui cursus nisi, at laoreet odio augue id eros. Curabitur quis tellus eget nunc ornare auctor.
-
-
-%------------------------------------------------
-
-\section*{Discussion}
-
-Use the Discussion section to objectively evaluate your work, do not just put praise on everything you did, be critical and exposes flaws and weaknesses of your solution. You can also explain what you would do differently if you would be able to start again and what upgrades could be done on the project in the future.
-
-
-%------------------------------------------------
-
-\section*{Acknowledgments}
-
-Here you can thank other persons (advisors, colleagues ...) that contributed to the successful completion of your project.
-
+We will use a separately fine-tuned LLM to generate explanations for the identified categories. These explanations will undergo qualitative assessment to ensure clarity and trustworthiness, improving the interpretability of our models' predictions.
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
