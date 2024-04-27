@@ -106,20 +106,16 @@ def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_trai
         model.train()
         total_loss = 0
 
-        for batch in train_dataloader:
+        for i, batch in enumerate(train_dataloader):
+            print(f'Batch {i+1}/{len(train_dataloader)}')
             # Unpack the batch
-            input_ids = batch[0][0].to(device)
-            attention_mask = batch[0][1].to(device)
-            token_type_ids = batch[0][2].to(device)
-            labels = batch[1].to(device)
+            input_ids = batch[0].to(device)
+            attention_mask = batch[1].to(device)
+            labels = batch[2].to(device)
 
             optimizer.zero_grad()
 
-            print(input_ids.shape)
-            print(attention_mask.shape)
-            print(token_type_ids.shape)
-
-            outputs = model(input_ids, attention_mask=attention_mask, token_type_ids=token_type_ids, labels=labels)
+            outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
             loss = outputs.loss
             loss.backward()
             optimizer.step()
@@ -132,13 +128,11 @@ def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_trai
         model.eval()
         val_loss = 0
         with torch.no_grad():
-            for batch in val_dataloader:
-                inputs = batch[0]  
-                labels = batch[1] 
-
-                input_ids = inputs[0].to(device)
-                attention_mask = inputs[1].to(device)
-                token_type_ids = inputs[2].to(device)
+            for i, batch in enumerate(val_dataloader):
+                print(f'Validation Batch {i+1}/{len(val_dataloader)}')
+                input_ids = batch[0].to(device)
+                attention_mask = batch[1].to(device)
+                labels = batch[2].to(device)
 
                 outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
                 loss = outputs.loss
