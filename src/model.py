@@ -3,6 +3,7 @@ import torch.nn as nn
 from torch.utils.data import DataLoader
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 from .preprocessing import preprocess_text
+from sklearn.model_selection import train_test_split
 
 def load_pretrained_bert_model(model_name, num_labels):
     """
@@ -42,6 +43,46 @@ def tokenize_text(tokenizer, text, max_length):
         return_tensors='pt'  # Return PyTorch tensors
     )
     return inputs
+
+
+# Split the tokenized inputs and labels into training and validation datasets.
+# Zaenkrat 10% val in 90% train
+def split_train_val_data(inputs, df, val_split=0.1):
+    """
+    Split the tokenized inputs and labels into training and validation datasets.
+    
+    Args:
+    inputs (dict): Dictionary containing tokenized inputs.
+    labels (List[int]): List of labels.
+    val_split (float): Fraction of validation data.
+    """
+    
+    # Get input_ids from tokenized inputs
+    input_ids = inputs['input_ids']
+    
+    # Get attention_mask from tokenized inputs
+    attention_mask = inputs['attention_mask']
+    
+    # Get labels from the DataFrame
+    labels = df['R2DiscussionType'].values
+    
+    # Split input_ids and labels into training and validation sets
+    train_inputs, val_inputs, train_labels, val_labels = train_test_split(
+        input_ids,
+        labels, 
+        random_state=42,
+        test_size=val_split)
+    
+    # Split attention_mask into training and validation sets
+    train_masks, val_masks, _, _ = train_test_split(
+        attention_mask, 
+        input_ids, 
+        test_size=val_split, 
+        random_state=42)
+    
+    # Return split data
+    return train_inputs, val_inputs, train_labels, val_labels, train_masks, val_masks
+    
 
 def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps):
     """
