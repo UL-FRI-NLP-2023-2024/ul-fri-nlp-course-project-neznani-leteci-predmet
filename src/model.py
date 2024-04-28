@@ -4,6 +4,7 @@ from torch.utils.data import DataLoader
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 from .preprocessing import preprocess_text
 from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support, confusion_matrix, classification_report
 
 def load_pretrained_bert_model(model_name, num_labels):
     """
@@ -141,6 +142,8 @@ def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_trai
         avg_train_loss = total_loss / len(train_dataloader)
         avg_val_loss = val_loss / len(val_dataloader)
         print(f'Epoch {epoch+1}/{num_epochs}, Train Loss: {avg_train_loss}, Val Loss: {avg_val_loss}')
+        
+    return model
 
 def evaluate_model(model, dataloader, device):
     """
@@ -152,20 +155,71 @@ def evaluate_model(model, dataloader, device):
     device (str): Device to use for evaluation ('cpu' or 'cuda').
     
     Returns:
-    float: Average loss on the validation dataset.
+    dict: A dictionary containing average loss and additional evaluation metrics on the validation dataset.
     """
+
     model.eval()
     total_loss = 0
+    all_predictions = []
+    all_true_labels = []
 
     with torch.no_grad():
         for batch in dataloader:
-            input_ids = batch['input_ids'].to(device)
-            attention_mask = batch['attention_mask'].to(device)
-            labels = batch['labels'].to(device)
+            input_ids = batch[0].to(device)
+            attention_mask = batch[1].to(device)
+            labels = batch[2].to(device)
 
             outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
             loss = outputs.loss
             total_loss += loss.item()
-
+            
+            logits = outputs.logits
+            predictions = torch.argmax(logits, dim=1)
+            # Append predictions and true labels
+            all_predictions.extend(predictions.cpu().numpy())
+            all_true_labels.extend(labels.cpu().numpy())
+            
+    # Calculate average loss
     avg_loss = total_loss / len(dataloader)
-    return avg_loss
+    
+    # Calculate additional evaluation metrics
+    # Accuracy
+    accuracy = accuracy_score(all_true_labels, all_predictions)
+    
+    # Precision, Recall, F1-score
+    precision, recall, f1, _ = precision_recall_fscore_support(all_true_labels, all_predictions, average='weighted')
+    
+    # Confusion matrix
+    conf_matrix = confusion_matrix(all_true_labels, all_predictions)
+    
+    # Classification report
+    class_report = classification_report(all_true_labels, all_predictions)
+    
+    # Return evaluation metrics
+    return {
+        'avg_loss': avg_loss,
+        'accuracy': accuracy,
+        'precision': precision,
+        'recall': recall,
+        'f1': f1,
+        'confusion_matrix': conf_matrix,
+        'classification_report': class_report
+    }
+    
+def print_evaluation_metrics(metrics):
+    """
+    Print the evaluation metrics for the fine-tuned BERT model.
+    
+    Args:
+    metrics (dict): A dictionary containing evaluation metrics.
+    """
+    print(f'Average Loss: {metrics["avg_loss"]}')
+    print(f'Accuracy: {metrics["accuracy"]}')
+    print(f'Precision: {metrics["precision"]}')
+    print(f'Recall: {metrics["recall"]}')
+    print(f'F1 Score: {metrics["f1"]}')
+    print('Confusion Matrix:')
+    print(metrics["confusion_matrix"])
+    print()
+    print('Classification Report:')
+    print(metrics["classification_report"])
