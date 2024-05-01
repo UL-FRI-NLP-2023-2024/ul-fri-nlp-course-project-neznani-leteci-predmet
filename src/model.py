@@ -48,7 +48,7 @@ def tokenize_text(tokenizer, text, max_length):
 
 # Split the tokenized inputs and labels into training and validation datasets.
 # Zaenkrat 10% val in 90% train
-def split_train_val_data(inputs, df, val_split=0.1):
+def split_train_val_data(inputs, df, val_split=0.2):
     """
     Split the tokenized inputs and labels into training and validation datasets.
     
@@ -85,7 +85,7 @@ def split_train_val_data(inputs, df, val_split=0.1):
     return train_inputs, val_inputs, train_labels, val_labels, train_masks, val_masks
     
 
-def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps):
+def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps, lr=2e-5):
     """
     Fine-tune the pre-trained BERT model on the training dataset.
     
@@ -98,7 +98,7 @@ def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_trai
     """
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    optimizer = AdamW(model.parameters(), lr=2e-5)
+    optimizer = AdamW(model.parameters(), lr=lr)
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=num_training_steps)
     model.to(device)
     criterion = nn.CrossEntropyLoss()

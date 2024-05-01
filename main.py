@@ -28,14 +28,14 @@ inputs = tokenize_text(tokenizer, preprocessed_text_list, max_length)
 # Split into train and val datasets - Verjetno ok - ne vem, kako bi to tocno testiral
 train_inputs, val_inputs, train_labels, val_labels, train_masks, val_masks = split_train_val_data(inputs, df)
 # print training data and validation data
-print(train_inputs)
-print("-"*100)
-print(val_inputs)
+#print(train_inputs)
+#print("-"*100)
+#print(val_inputs)
 
 # Transform labels to tensors
 unique_labels = df['R2DiscussionType'].unique()
 label_map = {label: torch.tensor(i) for i, label in enumerate(unique_labels)}
-print(label_map)
+#print(label_map)
 train_labels = [label_map[label] for label in train_labels]
 val_labels = [label_map[label] for label in val_labels]
 
@@ -51,7 +51,7 @@ val_dataset = [(input_ids, attention_mask, label) for input_ids, attention_mask,
 val_dataloader = DataLoader(val_dataset, batch_size=32, shuffle=False)
 
 # Fine tune
-num_epochs = 3
+num_epochs = 20
 num_training_steps = num_epochs * len(train_dataloader)
 
 model = fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps)

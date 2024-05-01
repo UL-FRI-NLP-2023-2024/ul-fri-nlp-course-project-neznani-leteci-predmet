@@ -1,0 +1,256 @@
+Parameters: lr=2e-05, batch_size=8, num_epochs=5, max_length=32:
+F1: 0.6504159611952591
+Parameters: lr=2e-05, batch_size=8, num_epochs=5, max_length=64:
+F1: 0.6863772333472776
+Parameters: lr=2e-05, batch_size=8, num_epochs=5, max_length=128:
+F1: 0.7172288802950824
+Parameters: lr=2e-05, batch_size=8, num_epochs=10, max_length=32:
+F1: 0.6858553798225563
+Parameters: lr=2e-05, batch_size=8, num_epochs=10, max_length=64:
+F1: 0.6965734692589823
+Parameters: lr=2e-05, batch_size=8, num_epochs=10, max_length=128:
+F1: 0.7048021886094462
+Parameters: lr=2e-05, batch_size=8, num_epochs=15, max_length=32:
+F1: 0.6535788569418226
+Parameters: lr=2e-05, batch_size=8, num_epochs=15, max_length=64:
+F1: 0.6519955654101997
+Parameters: lr=2e-05, batch_size=8, num_epochs=15, max_length=128:
+F1: 0.6647491383462969
+Parameters: lr=2e-05, batch_size=8, num_epochs=20, max_length=32:
+F1: 0.6313765361955004
+Parameters: lr=2e-05, batch_size=8, num_epochs=20, max_length=64:
+F1: 0.6849848357417744
+Parameters: lr=2e-05, batch_size=8, num_epochs=20, max_length=128:
+F1: 0.6734445870774497
+Parameters: lr=2e-05, batch_size=16, num_epochs=5, max_length=32:
+F1: 0.6335964451546244
+Parameters: lr=2e-05, batch_size=16, num_epochs=5, max_length=64:
+F1: 0.6167073478623543
+Parameters: lr=2e-05, batch_size=16, num_epochs=5, max_length=128:
+F1: 0.5299317868369717
+Parameters: lr=2e-05, batch_size=16, num_epochs=10, max_length=32:
+F1: 0.6647307100770403
+Parameters: lr=2e-05, batch_size=16, num_epochs=10, max_length=64:
+F1: 0.67843338159409
+Parameters: lr=2e-05, batch_size=16, num_epochs=10, max_length=128:
+F1: 0.6706190072527554
+Parameters: lr=2e-05, batch_size=16, num_epochs=15, max_length=32:
+F1: 0.7102545823487791
+Parameters: lr=2e-05, batch_size=16, num_epochs=15, max_length=64:
+F1: 0.7064259617451106
+Parameters: lr=2e-05, batch_size=16, num_epochs=15, max_length=128:
+F1: 0.6751064653503678
+Parameters: lr=2e-05, batch_size=16, num_epochs=20, max_length=32:
+F1: 0.6899264421215641
+Parameters: lr=2e-05, batch_size=16, num_epochs=20, max_length=64:
+F1: 0.6426434408141725
+Parameters: lr=2e-05, batch_size=16, num_epochs=20, max_length=128:
+F1: 0.6872795826772496
+Parameters: lr=2e-05, batch_size=32, num_epochs=5, max_length=32:
+F1: 0.4856980505288923
+Parameters: lr=2e-05, batch_size=32, num_epochs=5, max_length=64:
+F1: 0.45571072646210337
+Parameters: lr=2e-05, batch_size=32, num_epochs=5, max_length=128:
+F1: 0.5218934462158491
+Parameters: lr=2e-05, batch_size=32, num_epochs=10, max_length=32:
+F1: 0.6240960123886953
+Parameters: lr=2e-05, batch_size=32, num_epochs=10, max_length=64:
+F1: 0.661302990361324
+Parameters: lr=2e-05, batch_size=32, num_epochs=10, max_length=128:
+F1: 0.6202439024390244
+Parameters: lr=2e-05, batch_size=32, num_epochs=15, max_length=32:
+F1: 0.6473672671593608
+Parameters: lr=2e-05, batch_size=32, num_epochs=15, max_length=64:
+F1: 0.656731290389827
+Parameters: lr=2e-05, batch_size=32, num_epochs=15, max_length=128:
+F1: 0.6611737869388851
+Parameters: lr=2e-05, batch_size=32, num_epochs=20, max_length=32:
+F1: 0.6853124111660698
+Parameters: lr=2e-05, batch_size=32, num_epochs=20, max_length=64:
+F1: 0.681560520157831
+Parameters: lr=2e-05, batch_size=32, num_epochs=20, max_length=128:
+F1: 0.7073855955166654
+Parameters: lr=3e-05, batch_size=8, num_epochs=5, max_length=32:
+F1: 0.6477833368077272
+Parameters: lr=3e-05, batch_size=8, num_epochs=5, max_length=64:
+F1: 0.6399003628968786
+Parameters: lr=3e-05, batch_size=8, num_epochs=5, max_length=128:
+F1: 0.708808744488187
+Parameters: lr=3e-05, batch_size=8, num_epochs=10, max_length=32:
+F1: 0.6507217312832805
+Parameters: lr=3e-05, batch_size=8, num_epochs=10, max_length=64:
+F1: 0.6764403100118747
+Parameters: lr=3e-05, batch_size=8, num_epochs=10, max_length=128:
+F1: 0.6954450316981466
+Parameters: lr=3e-05, batch_size=8, num_epochs=15, max_length=32:
+F1: 0.6415792454905626
+Parameters: lr=3e-05, batch_size=8, num_epochs=15, max_length=64:
+F1: 0.7144408437091364
+Parameters: lr=3e-05, batch_size=8, num_epochs=15, max_length=128:
+F1: 0.6878790125287272
+Parameters: lr=3e-05, batch_size=8, num_epochs=20, max_length=32:
+F1: 0.6620409722212479
+Parameters: lr=3e-05, batch_size=8, num_epochs=20, max_length=64:
+F1: 0.631500053226055
+Parameters: lr=3e-05, batch_size=8, num_epochs=20, max_length=128:
+F1: 0.6377048251906667
+Parameters: lr=3e-05, batch_size=16, num_epochs=5, max_length=32:
+F1: 0.6304339562876149
+Parameters: lr=3e-05, batch_size=16, num_epochs=5, max_length=64:
+F1: 0.6592368296639258
+Parameters: lr=3e-05, batch_size=16, num_epochs=5, max_length=128:
+F1: 0.6842066291122484
+Parameters: lr=3e-05, batch_size=16, num_epochs=10, max_length=32:
+F1: 0.654562381425643
+Parameters: lr=3e-05, batch_size=16, num_epochs=10, max_length=64:
+F1: 0.6827816898548605
+Parameters: lr=3e-05, batch_size=16, num_epochs=10, max_length=128:
+F1: 0.6774284765298886
+Parameters: lr=3e-05, batch_size=16, num_epochs=15, max_length=32:
+F1: 0.6987976930859149
+Parameters: lr=3e-05, batch_size=16, num_epochs=15, max_length=64:
+F1: 0.7244750617445026
+Parameters: lr=3e-05, batch_size=16, num_epochs=15, max_length=128:
+F1: 0.652678113561632
+Parameters: lr=3e-05, batch_size=16, num_epochs=20, max_length=32:
+F1: 0.6614909912782253
+Parameters: lr=3e-05, batch_size=16, num_epochs=20, max_length=64:
+F1: 0.6904423023010072
+Parameters: lr=3e-05, batch_size=16, num_epochs=20, max_length=128:
+F1: 0.6530746973802347
+Parameters: lr=3e-05, batch_size=32, num_epochs=5, max_length=32:
+F1: 0.5879067587668357
+Parameters: lr=3e-05, batch_size=32, num_epochs=5, max_length=64:
+F1: 0.5897808843942097
+Parameters: lr=3e-05, batch_size=32, num_epochs=5, max_length=128:
+F1: 0.5343849646288671
+Parameters: lr=3e-05, batch_size=32, num_epochs=10, max_length=32:
+F1: 0.6323518640591811
+Parameters: lr=3e-05, batch_size=32, num_epochs=10, max_length=64:
+F1: 0.6772924617001272
+Parameters: lr=3e-05, batch_size=32, num_epochs=10, max_length=128:
+F1: 0.6612252861088797
+Parameters: lr=3e-05, batch_size=32, num_epochs=15, max_length=32:
+F1: 0.698040125128864
+Parameters: lr=3e-05, batch_size=32, num_epochs=15, max_length=64:
+F1: 0.6492895334358748
+Parameters: lr=3e-05, batch_size=32, num_epochs=15, max_length=128:
+F1: 0.6991561687819831
+Parameters: lr=3e-05, batch_size=32, num_epochs=20, max_length=32:
+F1: 0.6711122078015218
+Parameters: lr=3e-05, batch_size=32, num_epochs=20, max_length=64:
+F1: 0.6645971914264597
+Parameters: lr=3e-05, batch_size=32, num_epochs=20, max_length=128:
+F1: 0.6550246750414959
+Parameters: lr=5e-05, batch_size=8, num_epochs=5, max_length=32:
+F1: 0.6998464317976514
+Parameters: lr=5e-05, batch_size=8, num_epochs=5, max_length=64:
+F1: 0.6647479231060432
+Parameters: lr=5e-05, batch_size=8, num_epochs=5, max_length=128:
+F1: 0.630768626526845
+Parameters: lr=5e-05, batch_size=8, num_epochs=10, max_length=32:
+F1: 0.6685800649215283
+Parameters: lr=5e-05, batch_size=8, num_epochs=10, max_length=64:
+F1: 0.6802820486772426
+Parameters: lr=5e-05, batch_size=8, num_epochs=10, max_length=128:
+F1: 0.6744292662793888
+Parameters: lr=5e-05, batch_size=8, num_epochs=15, max_length=32:
+F1: 0.6588650734992199
+Parameters: lr=5e-05, batch_size=8, num_epochs=15, max_length=64:
+F1: 0.6672826325182378
+Parameters: lr=5e-05, batch_size=8, num_epochs=15, max_length=128:
+F1: 0.6424383667965183
+Parameters: lr=5e-05, batch_size=8, num_epochs=20, max_length=32:
+F1: 0.608961535969482
+Parameters: lr=5e-05, batch_size=8, num_epochs=20, max_length=64:
+F1: 0.686764879678872
+Parameters: lr=5e-05, batch_size=8, num_epochs=20, max_length=128:
+F1: 0.6883215700288872
+Parameters: lr=5e-05, batch_size=16, num_epochs=5, max_length=32:
+F1: 0.6628371131890096
+Parameters: lr=5e-05, batch_size=16, num_epochs=5, max_length=64:
+F1: 0.667313497604607
+Parameters: lr=5e-05, batch_size=16, num_epochs=5, max_length=128:
+F1: 0.6569604042440995
+Parameters: lr=5e-05, batch_size=16, num_epochs=10, max_length=32:
+F1: 0.6822376882884648
+Parameters: lr=5e-05, batch_size=16, num_epochs=10, max_length=64:
+F1: 0.7308756080766788
+Parameters: lr=5e-05, batch_size=16, num_epochs=10, max_length=128:
+F1: 0.6689909348214665
+Parameters: lr=5e-05, batch_size=16, num_epochs=15, max_length=32:
+F1: 0.671414936622971
+Parameters: lr=5e-05, batch_size=16, num_epochs=15, max_length=64:
+F1: 0.68157903857685
+Parameters: lr=5e-05, batch_size=16, num_epochs=15, max_length=128:
+F1: 0.7149127684285962
+Parameters: lr=5e-05, batch_size=16, num_epochs=20, max_length=32:
+F1: 0.6584345439329531
+Parameters: lr=5e-05, batch_size=16, num_epochs=20, max_length=64:
+F1: 0.6746389318588143
+Parameters: lr=5e-05, batch_size=16, num_epochs=20, max_length=128:
+F1: 0.6686252771618626
+Parameters: lr=5e-05, batch_size=32, num_epochs=5, max_length=32:
+F1: 0.6420795998744545
+Parameters: lr=5e-05, batch_size=32, num_epochs=5, max_length=64:
+F1: 0.6354875283446713
+Parameters: lr=5e-05, batch_size=32, num_epochs=5, max_length=128:
+F1: 0.6293401196658155
+Parameters: lr=5e-05, batch_size=32, num_epochs=10, max_length=32:
+F1: 0.6657537860859086
+Parameters: lr=5e-05, batch_size=32, num_epochs=10, max_length=64:
+F1: 0.6764490749277767
+Parameters: lr=5e-05, batch_size=32, num_epochs=10, max_length=128:
+F1: 0.7059866962305987
+Parameters: lr=5e-05, batch_size=32, num_epochs=15, max_length=32:
+F1: 0.651949248822518
+Parameters: lr=5e-05, batch_size=32, num_epochs=15, max_length=64:
+F1: 0.6972810465129463
+Parameters: lr=5e-05, batch_size=32, num_epochs=15, max_length=128:
+F1: 0.7306673001794953
+Parameters: lr=5e-05, batch_size=32, num_epochs=20, max_length=32:
+F1: 0.6676254833049258
+Parameters: lr=5e-05, batch_size=32, num_epochs=20, max_length=64:
+F1: 0.6860762034853087
+Parameters: lr=5e-05, batch_size=32, num_epochs=20, max_length=128:
+F1: 0.6709038751986789
+
+
+
+Best Hyperparameters:
+
+{'lr': 5e-05, 'batch_size': 16, 'num_epochs': 10, 'max_length': 64}
+
+
+Best Validation Metrics:
+
+Average Loss: 1.0471217706799507
+Accuracy: 0.7398373983739838
+Precision: 0.7561658029956609
+Recall: 0.7398373983739838
+F1 Score: 0.7308756080766788
+Confusion Matrix:
+[[ 7  2  0  0  0  0  0  0]
+ [ 3 65  0  0  3  0  0  0]
+ [ 0  0  2  0  1  0  0  0]
+ [ 2  0  1  0  0  0  0  0]
+ [ 2  4  3  0 12  2  0  0]
+ [ 2  0  2  0  1  4  0  0]
+ [ 1  1  0  0  1  0  1  0]
+ [ 0  1  0  0  0  0  0  0]]
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.41      0.78      0.54         9
+           1       0.89      0.92      0.90        71
+           2       0.25      0.67      0.36         3
+           3       0.00      0.00      0.00         3
+           4       0.67      0.52      0.59        23
+           5       0.67      0.44      0.53         9
+           6       1.00      0.25      0.40         4
+          11       0.00      0.00      0.00         1
+
+    accuracy                           0.74       123
+   macro avg       0.49      0.45      0.42       123
+weighted avg       0.76      0.74      0.73       123
