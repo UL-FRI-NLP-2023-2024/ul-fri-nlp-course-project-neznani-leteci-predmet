@@ -48,7 +48,7 @@ def tokenize_text(tokenizer, text, max_length):
 
 # Split the tokenized inputs and labels into training and validation datasets.
 # Zaenkrat 10% val in 90% train
-def split_train_val_data(inputs, df, val_split=0.2):
+def split_train_val_data(inputs, df, val_split=0.4):
     """
     Split the tokenized inputs and labels into training and validation datasets.
     
@@ -66,6 +66,9 @@ def split_train_val_data(inputs, df, val_split=0.2):
     
     # Get labels from the DataFrame
     labels = df['R2DiscussionType'].values
+
+    # Get messages from the tokenized inputs
+    messages = inputs['messages']
     
     # Split input_ids and labels into training and validation sets
     train_inputs, val_inputs, train_labels, val_labels = train_test_split(
@@ -81,11 +84,19 @@ def split_train_val_data(inputs, df, val_split=0.2):
         test_size=val_split, 
         random_state=42)
     
+    
+    # Split messages into training and validation sets
+    train_messages, val_messages, _, _ = train_test_split(
+        messages,
+        input_ids,
+        test_size=val_split,
+        random_state=42)
+    
     # Return split data
-    return train_inputs, val_inputs, train_labels, val_labels, train_masks, val_masks
+    return train_inputs, val_inputs, train_labels, val_labels, train_masks, val_masks, train_messages, val_messages
     
 
-def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps, lr=2e-5):
+def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps, lr=5e-5):
     """
     Fine-tune the pre-trained BERT model on the training dataset.
     
@@ -145,7 +156,7 @@ def fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_trai
         
     return model
 
-def evaluate_model(model, dataloader, device):
+def evaluate_model(model, dataloader, device, val_messages, label_map):
     """
     Evaluate the fine-tuned BERT model on the validation dataset.
     
@@ -178,6 +189,20 @@ def evaluate_model(model, dataloader, device):
             # Append predictions and true labels
             all_predictions.extend(predictions.cpu().numpy())
             all_true_labels.extend(labels.cpu().numpy())
+
+    # open file analysis.txt
+
+    file = open("analysis.txt", "w")
+    for i in range(len(all_predictions)):
+        # use label_map to get the label from the label index and true label
+        # this is how label_map looks like: {'Social': tensor(0), 'Seminar': tensor(1), 'Procedure': tensor(2), 'Other': tensor(3), 'Deliberation': tensor(4), 'UX': tensor(5), 'Imaginative entry': tensor(6)}
+        all_predictions[i] = list(label_map.keys())[list(label_map.values()).index(all_predictions[i])]
+        all_true_labels[i] = list(label_map.keys())[list(label_map.values()).index(all_true_labels[i])]
+        #print(f'Prediction: {all_predictions[i]}, True Label: {all_true_labels[i]}, Message: {val_messages[i]}')
+        # save this to file analysis.txt
+        file.write(f'Prediction: {all_predictions[i]}, True Label: {all_true_labels[i]}, Message: {val_messages[i]}\n')
+    file.close()
+
             
     # Calculate average loss
     avg_loss = total_loss / len(dataloader)

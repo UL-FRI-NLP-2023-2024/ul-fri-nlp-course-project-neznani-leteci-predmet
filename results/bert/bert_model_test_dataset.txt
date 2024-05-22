@@ -1,0 +1,153 @@
+Prediction: Seminar, True Label: Seminar, Message: If the princess possesses the same semi-barbaric trait as her father, then it would seem she directed her lover to the door with the tiger. 
+Prediction: Seminar, True Label: Seminar, Message: This is such an unfortunate story. It looks to me that no matter the choice, all parties will be unhappy. I'd like to think that even though she did inherit some of her dad's fury, she would still try to give her lover a chance and not pick the door with the tiger. Perhaps, she doesn't want to be as cruel as her father, and in the name of love, sacrificed her fate to allow her lover to live. I agree with some of your sentiments about the obsession and control the father holds over his daughter. She has 
+Prediction: UX, True Label: UX, Message: Oh yeah Rebecca, in order to get past page 8, you have to form 5 questions with the tiles on bottom of screen
+Prediction: Seminar, True Label: Seminar, Message: but at the same time, as you stated, the princess is herself in a greater trial than the man in that she has to decide whether to kill or not kill her lover who has hurt so deeply.
+Prediction: Seminar, True Label: Seminar, Message: How do you think it should end, Emilie?
+Prediction: Deliberation, True Label: Seminar, Message: Me too I had to reread the first couple pages several times before I understood what was going on.
+Prediction: Deliberation, True Label: Procedure, Message: Perfect. "See" you then.
+Prediction: Seminar, True Label: Seminar, Message: Based on the princess' description I had almost expected her to not make any motion towards the door. I assumed she would take the same 'let Fate decide' attitude as the king
+Prediction: Seminar, True Label: Seminar, Message: Part 2:I think the king has to send his daughter to the ring. She has broken the rules like anyone else and so as someone who has put their trust in fate he would subject his daughter to the same punishment. Ultimately I think he would believe that she would prevail in hist justice system.
+Prediction: Seminar, True Label: Seminar, Message:  I also think that even if the king finds out that she knew the doors he will know that either choice that she makes is a punishment in its own right. She suffers either way 
+Prediction: Seminar, True Label: Seminar, Message: Part One: The lover picks the door which the Princess indicates, and the beautiful courtier is revealed. The Princess grappled with her thoughts and instincts, feeling jealous and thinking about sending her lover to his death rather than see him with another woman.  She ended up indicating the door which held the beautiful woman because she realized that she couldn't live with the knowledge that she had sent her lover to his ruin.  Deciding that she would rather see him alive, she shows him which door to pick.
+Prediction: Seminar, True Label: Seminar, Message: Part 1: Ultimately, it is left for the reader to decide what is behind the door,
+Prediction: Seminar, True Label: Deliberation, Message: I like the idea of writing a paragraph or a few sentences and then bouncing off from there. 
+Prediction: Seminar, True Label: Seminar, Message: I think the king would subject her to the same law as everyone else and expect her fate to be decided in the arena.
+Prediction: Seminar, True Label: Seminar, Message: I think the lady is behind the door. Regardless of how jealous you may be, you can't really love someone and also be able to tolerate watching them get torn apart by a wild animal.
+Prediction: Seminar, True Label: Seminar, Message:  In the story  it is mentioned several times that the princess is jealous of the idea of her lover being with another woman  stating "her soul had burned in agony when he rushed to meet that woman" (pp. 10).
+Prediction: Seminar, True Label: Seminar, Message: I'm kind of on the fence about whether she saves him or not.
+Prediction: Seminar, True Label: Procedure, Message: Dr. Austin said have fun with it, and it is fun to ponder what might happen in the story. I think the main reason for setting a time to discuss it at the same time would be to test the collaborative software, using the box below instead of this one. I believe we could all write in it at the same time and see each other typing and change each other's words until we all agree we are done with our assessment. If we are able to do that, we might find there are unexpected positives or negatives to the collaboration process or system that we can only otherwise surmise. As you say, we've all responded to the prompts, so what we say doesn't matter that much, so all we'd need is a few minutes to see how using the box works. So if you want to try meeting, I could do Wednesday any time of day. Just set a time and I'll log on then. Thanks.
+Prediction: Seminar, True Label: Seminar, Message: Who knows? 
+Prediction: Seminar, True Label: Seminar, Message: given the two terrible choices,
+Prediction: Seminar, True Label: Deliberation, Message: I'm good with writing the majority choices.
+Prediction: Seminar, True Label: Seminar, Message: Oooo I have another idea! What if the princess sends the man to the tiger and right out tells her father she did it and wants a trial. Then because he loves her he begs her to choose the door with the young man he picks for her, but she chooses the tiger.
+Prediction: Deliberation, True Label: Seminar, Message: Maybe this was her punishment.
+Prediction: UX, True Label: Social, Message: This is Natalie. I can't wait to get this activity started
+Prediction: Deliberation, True Label: Procedure, Message: I tried looking for a "particpants" button or something and I couldn't find one.
+Prediction: Social, True Label: Seminar, Message: There, lol. what do you girls think?
+Prediction: Social, True Label: UX, Message: Hi sorry ladies I got kicked off
+Prediction: Seminar, True Label: Seminar, Message: I had orgininally thought that the king would either keep her secret out of love for his daughter, or out of barbaric pride that she sent her lover to his grizzly death, or a combination of the two. 
+Prediction: Social, True Label: Social, Message: Hello. 
+Prediction: Seminar, True Label: Seminar, Message: P2: I believe the king would send his daughter to the arena too. Given his barbaric nature. However, he too may indicate which door the tiger waits behind.
+Prediction: UX, True Label: UX, Message: Yeah I put questions, I'll refresh and try again
+Prediction: Deliberation, True Label: Deliberation, Message: Are we all supposed to write our answers below?
+Prediction: Social, True Label: Procedure, Message: Ok, that's how I understand it as well. Let's wait a few more minutes to give Julie a chance to join us. Sound good?
+Prediction: Seminar, True Label: Seminar, Message: As for the second question, I imagine the king would definitely send the princess to her own trial just like her lover. His barbarism is so calculated. He has come up with his perfect judgement system, allowing the accused to choose their own fate and leave it up to chance. I don't think there would be any exception to his system, even his own daughter.
+Prediction: UX, True Label: Deliberation, Message: At the top of the screen are two questions, I believe that is what the 1 & 2 are on the bottom portion
+Prediction: Seminar, True Label: Seminar, Message: ima
+Prediction: Seminar, True Label: Seminar, Message: Part 2:  I don't think the King will do anything to the Princess.  He knows both choices would be punishment for her and her lover.
+Prediction: Deliberation, True Label: Procedure, Message: I'm not sure! 
+Prediction: Seminar, True Label: Seminar, Message: Knowing she could save him from death, but still lose him in the end.
+Prediction: Seminar, True Label: Seminar, Message: Since he's barbaric...maybe he puts her in the ring to face her own doors? :(
+Prediction: Seminar, True Label: Seminar, Message: She gifted him with the tiger.
+Prediction: Seminar, True Label: Seminar, Message: he would have to send his daughter to the arena for a judgement. 
+Prediction: Social, True Label: Seminar, Message: Good idea.
+Prediction: Deliberation, True Label: Deliberation, Message: I added a brief ending. If everyone is good with it, lets hit submit
+Prediction: Deliberation, True Label: Seminar, Message:  I'm definitely okay with another approach that we can all agree on
+Prediction: Seminar, True Label: Seminar, Message: As for the second part, I'm not sure if the King would carry out the same punishment for his daughter as he would the commoners. However, he would definitely think of another way to punish her that would consist of a clever, yet barbaric twist for her to prove her loyalty and worth.
+Prediction: Seminar, True Label: UX, Message: i do not
+Prediction: Seminar, True Label: Seminar, Message: Okay, I agree, I think the lady is behind the door.
+Prediction: Deliberation, True Label: Deliberation, Message: Okay so maybe we could each write out an answer for the first part of the question and then we edit the response into one?
+Prediction: Seminar, True Label: Seminar, Message: I am under the impression that she would rather see him dead than in the arms of another woman.
+Prediction: Seminar, True Label: Seminar, Message: I think the tiger is behind the door, as it would create a plot twist when its not the predictable lady. The king may show mercy towards his daughter, as she is royalty. Instead, she might have to go on a quest of some kind to prove her worth to inherit the thrown one day.
+Prediction: Deliberation, True Label: Social, Message: I had to ask my spouse for help
+Prediction: Social, True Label: UX, Message: Ok it's finally working. I'll read the next part quickly and then I'll be good to keep going. Sorry guys, thanks for your help
+Prediction: Seminar, True Label: Seminar, Message: it's wonderful!
+Prediction: Seminar, True Label: Seminar, Message: because while I agree with the first part said
+Prediction: Social, True Label: Seminar, Message: Thanks for the info and research, I was wondering about this story as well. I've never read it before.
+Prediction: Seminar, True Label: Deliberation, Message: What were your thoughts?
+Prediction: Seminar, True Label: Seminar, Message:  I think that she may dislike the idea that he marries another more than him dying.
+Prediction: Social, True Label: Deliberation, Message: Hey guys I got through the next page
+Prediction: Seminar, True Label: Imaginative entry, Message: And that's true! 
+Prediction: Seminar, True Label: UX, Message: and then it just seems to end
+Prediction: Seminar, True Label: Seminar, Message: Part 2: The king most certainly spares his daughter, one way or another. She is his greatest pride. I say he puts on a show for the people to act as though the law is being upheld, but behind the doors are suiters of his choosing. He keeps his daughter safe and she has to marry someone he believes is the best choice for her.
+Prediction: Seminar, True Label: Seminar, Message: Hi Kathryn Bell! I am curious to know why you think the lover would not follow the princess's instructions to open the door on the right? While the princess definitely felt untrustworthy to me, I did not get a sense that the lover felt that from her.
+Prediction: Deliberation, True Label: Seminar, Message: att
+Prediction: Seminar, True Label: Seminar, Message: Regarding part 2 of the question, what do you think the king does to his daughter?
+Prediction: Seminar, True Label: Seminar, Message: I like it! Good sentemce.
+Prediction: Seminar, True Label: Seminar, Message: When the King discovers that his daughter has broken the law, I believe he would most likely make an exception for her. In the story it stated that the King put the love for his  therefore I highly doubt he would send her into the arena. Because of the King views himself and his daughter as royalty, I would speculate that he would come up with an  alternate punishment for his daughter . daughter above all of humanity" and that she was the "apple of his eye
+Prediction: Deliberation, True Label: Deliberation, Message: Yes it fits well with the story
+Prediction: Seminar, True Label: Seminar, Message: or maybe he put her behind one of the doors!
+Prediction: Seminar, True Label: Seminar, Message: Part 1:  I believe that the Princess indicated for her lover to choose the door with the other lady behind it, because her love for him was strong.  Her relationship with him wasn't only passionate feelings, but truly a deep love, that is why it pained the Princess so much to think of her lover with another woman.  I believe that the young man trusted the Princess, because he knew her very well.  He knew that she would defy her father and find the answer to save him.  That's why he looked to her for help.  They knew each other very well.
+Prediction: Seminar, True Label: Seminar, Message: Part One con't: Oops, sent the rest before finishing this thought. I think the lover goes to the door on the left instead of the door on the right, thinking on her barbaric" nature and that she'd likely betray him  and finds a lady instead of the tiger. I'm assuming even though he knows her  it would leave him in shock knowing that the Princess would want him dead if she cannot keep him to herself."
+Prediction: Seminar, True Label: Seminar, Message: Without someone seeing her give the signal, they really cannot accuse her of helping him
+Prediction: Deliberation, True Label: Deliberation, Message: So the top is for chatting and the bottom is for responding, I believe.
+Prediction: Seminar, True Label: Seminar, Message: It might not add to the style in which it was written, but what you predicted to happen fits well with the story in my opinion
+Prediction: Seminar, True Label: Deliberation, Message: What did you have to do?
+Prediction: Seminar, True Label: Seminar, Message: I feel that with the personalities traits provided to both the king and princess, she decided that death would be more appropriate than another woman, a rival, living happily with her lover. The princess was already wavering with deciding if he was faithful, so why would she give him and her rival the satisfaction? The lion seems to be the only choice for her disposition and upbringing.
+Prediction: Seminar, True Label: Seminar, Message: Yes, she did seem very jealous. The story led me to believe she would rather nobody have him if she could not.
+Prediction: Social, True Label: Social, Message: Okay!
+Prediction: Social, True Label: Social, Message: lol 
+Prediction: Social, True Label: Social, Message: Good idea!
+Prediction: Other, True Label: Seminar, Message: w
+Prediction: Seminar, True Label: Seminar, Message: Ana, I agree with you that the king is so adamant that his system is perfect that he would subject his daughter to it. I think he is somewhat blinded by his own importance, and feels that as king he should also be in charge of everyone's fate.  because if he truly loved her he would not have sent the one man that she loved into the arena. He would have moved mountains to make her happy
+Prediction: Seminar, True Label: Seminar, Message: ^Gina, that is a really interesting point that you make, 
+Prediction: Seminar, True Label: Seminar, Message: I agree he will forgive his daughter because he loves her so.
+Prediction: Procedure, True Label: Procedure, Message: We can continue to discuss individually, or if you want to try writing collaboratively at the same time, please suggest a time. I'm available any evening this week starting at 6 p.m. I'll keep tabs on here from now on to see if you want to do that. Thanks, Robyn
+Prediction: Social, True Label: Deliberation, Message: You have to do them one at a time
+Prediction: Seminar, True Label: Seminar, Message: Hi Diane Gonzalez and Deborah Evans. I'm sorry to be so late joining the conversation. If I ponder too long, I'll never come to a conclusion, so I'm going to write my first thoughts. I share your  he's barbaric, and he's fine doling out punishment to his own daughter, as his punishment of her lover has in effect punished her as well. take that the princess will direct the gentleman to the tiger - she's lost him either way and her jealousy and barbarism are too great. On the other hand, the text describes her and the gentleman as having one soul, which I take to mean he would know if she chose the tiger, in which case he'd choose the other door, yet he doesn't. So does that mean she didn't choose the tiger? Or that he'd rather die than be with another woman? For Part 2, I believe the king likely would not show mercy, even to his own daughter, as he has consistently relied on this method of justice
+Prediction: Seminar, True Label: Seminar, Message: The second question here is just as complex for different reasons
+Prediction: Seminar, True Label: Seminar, Message: Part 2: If the King is unbiased, he will treat her like any other person who had broken the law.
+Prediction: Seminar, True Label: Seminar, Message: is that too much?
+Prediction: Deliberation, True Label: UX, Message: Okay, me too! Sorry there's a bit of a delay on my end.
+Prediction: Seminar, True Label: Seminar, Message: I agree with both of you. To me, it is more likely that the princess would tell the man to open the door to the tiger. There was no mention of the princess questioning the morality of sending him to his death. In fact, it appeared like she was leaning towards it as the more merciful option because he would have a quick death and then be waiting for her in the afterlife. I think if she was going to send him to the other lady, she would have shown more guilt over the option of the tiger.
+Prediction: Seminar, True Label: Procedure, Message: Do we know how many people are part of this group? 
+Prediction: Deliberation, True Label: Deliberation, Message: Is the response we write in the field below supposed to be in the same style of the story, like we're completing it? Or are we just answering the questions?
+Prediction: Seminar, True Label: Seminar, Message: HOWEVER, she is so distraught about losing the love of her life that she actually chooses the tiger's door on purpose.
+Prediction: Deliberation, True Label: Procedure, Message: How much longer would you like to wait for Julie before we begin? 5 more minutes?
+Prediction: Seminar, True Label: Seminar, Message:  Sadly  the barbaric nature of the king and princess is still alive today in crimes of passion."
+Prediction: Social, True Label: Seminar, Message: Oh, sorry! Yes I read it
+Prediction: Seminar, True Label: Seminar, Message: I would imagine,
+Prediction: UX, True Label: UX, Message: Maybe sometime next week there will be a button to push.
+Prediction: Seminar, True Label: Seminar, Message: I agree with you Lillian Flores about it depending on someone, but I feel that it is up to the person reading the story and reflecting on the actions of the characters. In this case, the princess was jealous of the girl and she was also semi-barbaric like her father, so I feel she would have chosen the door with the tiger for the man. If I go with my own emotions, even though the author said not to base it on that, I would think that the princess would make the right choice with the right door and let him marry the man.  Although, would the man trust the princess enough and choose the same door as she indicated? So behind the right door would be the tiger.  They are both semibarbaric, so the King would most likely be disappointed at first, but either way, he got what he wanted and that was to keep his daughter away from this man. In this case, either sentence would be justice in his eyes.
+Prediction: Seminar, True Label: Seminar, Message: Just because she comes from a semi-barbaric King does not make her semi-barbaric. 
+Prediction: Deliberation, True Label: Procedure, Message: Hi. I'm not sure if we were supposed to ultimately write an ending to the story or just answer the prompts collectively. I wrote an ending below, and you can change it or replace it. We just want to test the use of the space at the same time, I think.
+Prediction: Seminar, True Label: Deliberation, Message: Yes, potentially something for the research team to work on clarifying....
+Prediction: Seminar, True Label: Seminar, Message: It depends upon where the author wants to take the story. Given the princess's stealth and cunning in find out what was behind each door, I think she would rather see her lover dead than alive.
+Prediction: Procedure, True Label: Procedure, Message: Hi everyone! I have read the story and am ready to discuss.  I can log back in later to see if anyone else is ready.  Should we try to figure out a time to all come back and work in here together?
+Prediction: Seminar, True Label: Seminar, Message: I  think she sends him to the door with the tiger. When the king finds out that she knew he is so pleased by her barbarism that he does nothing but inside he has now decided that she is a worthy predecessor.
+Prediction: UX, True Label: Procedure, Message: I’ll check in soon and add to it 
+Prediction: Seminar, True Label: Seminar, Message: In terms of just answering I feel like the tiger was behind the door, and later the King puts the daughter to trial...
+Prediction: Seminar, True Label: Seminar, Message:  It could be argued that the informant is more guilty than the princess and is sent to show the kingdom the consequence of such behaviors.
+Prediction: Seminar, True Label: Seminar, Message: Part 1: If she loves him, the princess will lead her lover to the door that will allow him to live. If she allows greed and envy to cloud her judgement, she will likely lead her lover to his death.
+Prediction: Seminar, True Label: Seminar, Message: I think it would depend on how much she truly trust her lover. If she had faith in him truly, she would let him live with the lady. At least he would be alive and happy. But if she was full of distrust or jealousy she would kill her lover. Even if she is semi-barbaric she seems to be fair or at least a follower of her Father. I would say she would point to the Lady in the end.
+Prediction: Seminar, True Label: Seminar, Message: I still think she sent him to the tiger!
+Prediction: Seminar, True Label: Seminar, Message: I enjoyed reading all of your perspectives.  Nicole Gonzalez- I also found the idea of barbarism" kind of unsettling... I guess it was a pretty common theme in story telling in the "old  but reading from my 21st century perspective days"  it feels like labeling the society as "other" or "bad"."
+Prediction: Deliberation, True Label: Deliberation, Message: and am open to other thoughts/suggestions.
+Prediction: Deliberation, True Label: Social, Message: I know, I've been waiting my the computer
+Prediction: Deliberation, True Label: Deliberation, Message: Any additions?
+Prediction: Social, True Label: Social, Message: I'd say we pretty have wrapped things up then. It was nice working with both of you!
+Prediction: Procedure, True Label: Deliberation, Message: Submitted
+Prediction: Seminar, True Label: Seminar, Message: I think she tells him to go to the right but he goes to the left, finding the lady behind the door. In that moment realizes that she led him to his death. The Princess then has to face the fact that he found out she would rather see him dead than with the lady.
+Prediction: Seminar, True Label: Seminar, Message: sentence*
+
+
+
+Average Loss: 0.9106875211000443
+Accuracy: 0.7024793388429752
+Precision: 0.7200028621516226
+Recall: 0.7024793388429752
+F1 Score: 0.6952168186976161
+Confusion Matrix:
+[[ 8  0  0  1  5  2  1]
+ [ 0  0  0  0  1  0  0]
+ [ 0  0  0  0  0  0  0]
+ [ 5  0  0  2  2  1  1]
+ [ 4  0  1  0 67  4  0]
+ [ 2  0  0  0  0  5  1]
+ [ 1  0  0  0  2  2  3]]
+
+Classification Report:
+                   precision    recall  f1-score   support
+
+     Deliberation       0.40      0.47      0.43        17
+Imaginative entry       0.00      0.00      0.00         1
+            Other       0.00      0.00      0.00         0
+        Procedure       0.67      0.18      0.29        11
+          Seminar       0.87      0.88      0.88        76
+           Social       0.36      0.62      0.45         8
+               UX       0.50      0.38      0.43         8
+
+         accuracy                           0.70       121
+        macro avg       0.40      0.36      0.35       121
+     weighted avg       0.72      0.70      0.70       121
+
