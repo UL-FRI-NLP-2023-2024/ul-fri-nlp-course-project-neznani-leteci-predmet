@@ -112,9 +112,9 @@ def run_tfidf(file_path):
     y =df['R2DiscussionType'].values
     
     # Split the dataset into train, validation and test sets
-    # x_train and y_train - training data and labels - 70%
-    # x_temp and y_temp - temporary data and labels - 30% - later split into validation and test sets
-    x_train, x_temp, y_train, y_temp = train_test_split(x, y, test_size=0.3, random_state=42, stratify=y)
+    # x_train and y_train - training data and labels - 60%
+    # x_temp and y_temp - temporary data and labels - 40% - later split into validation and test sets
+    x_train, x_temp, y_train, y_temp = train_test_split(x, y, test_size=0.4, random_state=42, stratify=y)
     # Validation - x_val and y_val and Test - x_test and y_test
     X_val, X_test, y_val, y_test = train_test_split(x_temp, y_temp, test_size=0.5, random_state=42, stratify=y_temp)
     
@@ -138,20 +138,24 @@ def run_tfidf(file_path):
     
     # Evaluate the model on the validation set
     y_pred = model.predict(X_val)
+    report_val = classification_report(y_val, y_pred, zero_division=1, digits=4)
     print("Validation set evaluation:")
-    print(classification_report(y_val, y_pred))
+    print(report_val)
     
     # Evaluate the model on the test set
     y_pred = model.predict(X_test)
-    report = classification_report(y_test, y_pred)
+    report_test = classification_report(y_test, y_pred, zero_division=1, digits=4)
     print("Test set evaluation:")
-    print(report)
+    print(report_test)
     
     # Save classification report to a file
     with open('results/tfidf/tfidf_classification_report_test.out', 'w') as f:
         # Write parameters and classification report to the file
         f.write(f'Parameters used: {best_params}\n\n')
-        f.write(report)
+        f.write("Validation set evaluation:\n")
+        f.write(report_val + "\n\n")
+        f.write("Test set evaluation:\n")
+        f.write(report_test + "\n\n")
         
     # Save the model
     model_path = 'models/tfidf_classifier.pkl'

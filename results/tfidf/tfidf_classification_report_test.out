@@ -1,15 +1,34 @@
-Parameters used: {'C': 10, 'penalty': 'l2', 'solver': 'liblinear'}
+Parameters used: {'C': 100, 'penalty': 'l2', 'solver': 'liblinear'}
 
+Validation set evaluation:
                    precision    recall  f1-score   support
 
-     Deliberation       0.22      0.15      0.18        13
-Imaginative entry       0.00      0.00      0.00         2
-            Other       0.00      0.00      0.00         1
-        Procedure       0.50      0.14      0.22         7
-          Seminar       0.67      0.88      0.76        50
-           Social       0.50      0.36      0.42        11
-               UX       0.50      0.29      0.36         7
+     Deliberation     0.4000    0.2353    0.2963        17
+Imaginative entry     1.0000    0.0000    0.0000         3
+            Other     0.0000    0.0000    0.0000         1
+        Procedure     0.5000    0.2222    0.3077         9
+          Seminar     0.7079    0.9403    0.8077        67
+           Social     0.6000    0.6429    0.6207        14
+               UX     1.0000    0.2000    0.3333        10
 
-         accuracy                           0.58        91
-        macro avg       0.34      0.26      0.28        91
-     weighted avg       0.54      0.58      0.54        91
+         accuracy                         0.6612       121
+        macro avg     0.6011    0.3201    0.3380       121
+     weighted avg     0.6622    0.6612    0.6111       121
+
+
+Test set evaluation:
+                   precision    recall  f1-score   support
+
+     Deliberation     0.3333    0.2941    0.3125        17
+Imaginative entry     0.3333    0.2500    0.2857         4
+            Other     0.0000    0.0000    0.0000         1
+        Procedure     0.3333    0.2222    0.2667         9
+          Seminar     0.7215    0.8507    0.7808        67
+           Social     0.6364    0.5000    0.5600        14
+               UX     0.1667    0.1111    0.1333         9
+
+         accuracy                         0.6033       121
+        macro avg     0.3606    0.3183    0.3341       121
+     weighted avg     0.5682    0.6033    0.5803       121
+
+
