@@ -3,6 +3,7 @@ import torch
 
 import argparse
 from torch.utils.data import DataLoader
+from collections import Counter
 
 
 from src.data_loader import load_dataset, extract_data
@@ -51,6 +52,16 @@ def run_bert(file_path):
     val_masks, test_masks = np.array_split(val_masks, 2)
     val_messages, test_messages = np.array_split(val_messages, 2)
 
+    # Check if the data is split correctly
+    #counter = Counter(train_labels)
+    #print(counter)
+
+    #counter = Counter(val_labels)
+    #print(counter)
+
+    #counter = Counter(test_labels)
+    #print(counter)
+
 
 
     # Transform labels to tensors
@@ -77,19 +88,19 @@ def run_bert(file_path):
     num_epochs = 5
     num_training_steps = num_epochs * len(train_dataloader)
 
-    #model = fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps)
+    model = fine_tune_bert(model, train_dataloader, val_dataloader, num_epochs, num_training_steps)
 
     # Save model - Na github sem dodal samo mapo models kamor lahko pol lokalno shranjujemo (modela nisem nalagal ker je huge)
-    #model_path = 'models/bert_model.pt'
-    #torch.save(model, model_path)
+    model_path = 'models/bert_model.pt'
+    torch.save(model, model_path)
     # Load dataset
-    model = torch.load('models/bert_model.pt')
+    #model = torch.load('models/bert_model.pt')
 
     # Evaluate model on the test dataset
     test_dataset = [(input_ids, attention_mask, label) for input_ids, attention_mask, label in zip(test_inputs, test_masks, test_labels)]
     test_dataloader = DataLoader(test_dataset, batch_size=16, shuffle=False)
 
-
+    # Evaluation for some reason does not work locally, but works on arnes hpc
     metrics = evaluate_model(model, test_dataloader, "cuda", test_messages, label_map)
     print_evaluation_metrics(metrics)
     
